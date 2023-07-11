@@ -1,0 +1,202 @@
+<html>
+<head>
+	<title>The World On A Plate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+    </div>
+
+	<header>
+		<h1>The World On A Plate</h1>
+		<nav>
+			<ul>
+				<li><a href="food.html" class="nav-link">Our Menu</a></li>
+				<li><a href="about.html" class="nav-link">About Us</a></li>
+				<li><a href="contact.html" class="nav-link">Contact Us</a></li>
+				<li><a href="reviews.html" class="nav-link">Reviews</a></li>
+				<li><a href="onlineorder.html" class="nav-link">Order Now</a></li>
+				<li><a href="online-reservations.html" class="nav-link">Reservations</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<button id="toggle-theme-button">Toggle Theme</button>
+
+	<main>
+		<h2>Online Order</h2>
+		<p>Welcome to our online ordering page. Please select the items you would like to order and complete the form below:</p>
+
+        <form action="#" method="post" onsubmit="return validateFormOrder()">
+
+			<fieldset>
+				<legend>Input your Order:</legend>
+				<section>
+					<h2>Italian Cuisine</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Dish</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="carbonara" name="items[]" value="Spaghetti Carbonara"> Spaghetti Carbonara</td>
+								<td>$15</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="margherita" name="items[]" value="Margherita Pizza"> Margherita Pizza</td>
+								<td>$12</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="chicken_parm" name="items[]" value="Chicken Parmesan"> Chicken Parmesan</td>
+								<td>$18</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h2>Asian Fusion</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Dish</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="pad_thai" name="items[]" value="Pad Thai"> Pad Thai</td>
+								<td>$14</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="sesame_chicken" name="items[]" value="Sesame Chicken"> Sesame Chicken</td>
+								<td>$16</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="sushi" name="items[]" value="Sushi Platter"> Sushi Platter</td>
+								<td>$20</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Mexican Favorites</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Dish</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="chimichanga" name="items[]" value="Chimichanga"> Chimichanga</td>
+								<td>$14</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="taco_salad" name="items[]" value="Taco Salad"> Taco Salad</td>
+								<td>$12</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="enchiladas" name="items[]" value="Enchiladas"> Enchiladas</td>
+								<td>$16</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>American Classics</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Dish</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="cheeseburger" name="items[]" value="Cheeseburger"> Cheeseburger</td>
+								<td>$12</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="fried-chicken" name="items[]" value="Fried Chicken"> Fried Chicken</td>
+								<td>$18</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="mac-and-cheese" name="items[]" value="Mac and Cheese"> Mac and Cheese</td>
+								<td>$14</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Lebanese Cuisine</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Dish</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="hummus-with-pita-bread" name="items[]" value="Hummus with Pita Bread"> Hummus with Pita Bread</td>
+								<td>$8</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="fattoush-salad" name="items[]" value="Fattoush Salad"> Fattoush Salad</td>
+								<td>$12</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="shish-taouk" name="items[]" value="Shish Taouk"> Shish Taouk</td>
+								<td>$18</td>
+							</tr>
+
+							<tr>
+								<td><input type="checkbox" id="moussaka" name="items[]" value="Moussaka"> Moussaka</td>
+								<td>$20</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</section>
+
+			</fieldset>
+
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="phone">Phone number:</label>
+			<input type="tel" id="phone" name="phone" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="address">Delivery Address:</label>
+			<textarea id="address" name="address" rows="3" required>
+			</textarea>
+
+			<input type="submit"value="Submit">
+        </form>
+
+        </main>
+
+		<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+			<span></span>
+		</button>
+
+        <footer>
+            <p>&copy; 2023 The World On A Plate. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* Universal styles applied to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the body element */
+body {
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eee;
+}
+
+/* Styles for the header element */
+header {
+    background-color: #222;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Styles for the header's h1 element */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-transform: uppercase;
+}
+
+/* Styles for the nav element */
+nav {
+    background-color: #222;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Styles for the nav's ul element */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the nav's ul li element */
+nav ul li {
+    margin-left: 30px;
+}
+
+/* Styles for the nav's ul li a element */
+nav ul li a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #ff6b6b;
+}
+
+/* Styles for the nav's ul li a element when hovering over it */
+nav ul li a:hover {
+    background-color: #eee;
+    color: #ff6b6b;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Styles for the main element */
+main {
+    padding: 50px;
+}
+
+/* Styles for the section element */
+section {
+    margin-bottom: 50px;
+}
+
+/* Styles for the section's h2 element */
+section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Styles for the table element */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styles for the th and td elements inside the table */
+th,
+td {
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+/* Styles for the th element inside the table */
+th {
+    background-color: #ff6b6b;
+    color: #222;
+}
+
+/* Styles for every even tr element inside the table */
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+/* Styles for the footer element */
+footer {
+    background-color: #ff6b6b;
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    font-size: 14px;
+}
+
+/* Styles for the p element inside the footer element */
+footer p {
+    margin: 0;
+}
+
+/* Styles for the form label element */
+label {
+    display: block;
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #B8B8B8;
+}
+
+/* Style the form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 2px solid #B8B8B8;
+    border-radius: 0.5em;
+    width: 100%;
+    max-width: 40em;
+}
+
+/* Style the form buttons */
+input[type="submit"],
+input[type="reset"] {
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #B8B8B8;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #1A1A1A;
+    color: #B8B8B8;
+}
+
+#preloader {
+    background: #1A1A1A url(BurgerPreloader.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #2F2F2F;
+    border-left: 10px solid #B8B8B8;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote footer {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    color: #B8B8B8;
+}
+
+/*Customize the search button and bar*/
+#search {
+    background-color: #1A1A1A;
+    border: none;
+    color: #B8B8B8;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#contactImg {
+    position: absolute;
+    float: right;
+    right: 100px;
+    top: 250px;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTopBtn span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#scrollToTopBtn span:before,
+#scrollToTopBtn span:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background: #fff;
+    top: 5px;
+    left: 9px;
+    transform: rotate(45deg);
+}
+
+#scrollToTopBtn span:after {
+    transform: rotate(-45deg);
+}
+
+/* Style the social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ff7f50;
+}
+
+#toggle-theme-button {
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#toggle-theme-button:hover {
+    background-color: lightgray;
+}

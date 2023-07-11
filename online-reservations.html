@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>The World On A Plate - Online Reservations</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+    </div>
+
+	<header>
+		<h1>The World On A Plate</h1>
+		<nav>
+			<ul>
+				<li><a href="food.html" class="nav-link">Our Menu</a></li>
+				<li><a href="about.html" class="nav-link">About Us</a></li>
+				<li><a href="contact.html" class="nav-link">Contact Us</a></li>
+				<li><a href="reviews.html" class="nav-link">Reviews</a></li>
+				<li><a href="onlineorder.html" class="nav-link">Order Now</a></li>
+				<li><a href="online-reservations.html" class="nav-link">Reservations</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<button id="toggle-theme-button">Toggle Theme</button>
+
+	<main>
+		<h2>Online Reservations</h2>
+		<p>Welcome to our online reservations page. Please fill out the form below to make a reservation:</p>
+
+		<form action="#" method="post" onsubmit="return validateFormReserve()">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" required>
+
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" required>
+
+			<label for="time">Time:</label>
+			<input type="time" id="time" name="time" required>
+
+			<label for="party-size">Party Size:</label>
+			<input type="number" id="party-size" name="party-size" min="1" max="50" required>
+
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+
+	<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+		<span></span>
+	</button>
+
+	<footer>
+		<p>&copy; 2023 The World On A Plate</p>
+	</footer>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
